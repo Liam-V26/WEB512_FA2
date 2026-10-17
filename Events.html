@@ -9,7 +9,10 @@
 </head>
 <body>
     <!-- Site page heading -->
-    <header>Events</header>
+    <header id="top">
+        <h1>Events</h1>
+        <p>Experiences, activities, and ways to connect</p>
+    </header>
 
 <main>
     <!-- Navigation links to the other site pages -->
@@ -26,22 +29,27 @@
     <hr>
 
     <!-- Events page introduction and image -->
-    <div>
-        <h1>Events</h1>
-        <p>Check out our upcoming events and activities!</p> 
+    <section>
+        <h2>Find your next experience</h2>
+        <p>Check out our upcoming events and activities. The schedule includes opportunities to enjoy wildlife, photography, conservation, and community.</p>
         <img src="Events.jpg" alt="image of seats" width="700" class="Events img">  
-    </div>
+    </section>
 
     <!-- Upcoming events schedule and South Africa information links -->
-    <div>
-        <h2>Upcoming Events</h2>
+    <section aria-labelledby="upcoming-heading">
+        <h2 id="upcoming-heading">Upcoming Events</h2>
+        <p>Review the dates and locations below, then <a href="Contact Us.html">contact us</a> if you have a question about an event.</p>
 
         <table border="1" class="main table">
+            <caption>Upcoming event dates and locations</caption>
+            <thead>
             <tr>
-                <th>Event</th>
-                <th>Date</th>
-                <th>Location</th>
+                <th scope="col">Event</th>
+                <th scope="col">Date</th>
+                <th scope="col">Location</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Wildlife Photography Workshop</td>
                 <td>December 10, 2026</td>
@@ -53,8 +61,8 @@
                 <td>Lakeside Reserve</td>
             </tr>
             <tr>
-                <td>Kristmas Dinner</td>
-                <td>December 24&25, 2026</td>
+                <td>Christmas Dinner</td>
+                <td>December 24 &amp; 25, 2026</td>
                 <td>Community Center</td>
             </tr>
             <tr>
@@ -98,32 +106,40 @@
                 <td>Movie Theater</td>
             </tr>
             <tr>
-                <td>Kristmas Dinner</td>
-                <td>December 24&25, 2027</td>
+                <td>Christmas Dinner</td>
+                <td>December 24 &amp; 25, 2027</td>
                 <td>Community Center</td>
             </tr>
+            </tbody>
         </table>
-            <h2>Click on the links below to learn about South Africa</h2>
+            <h2>Learn more about South Africa</h2>
+            <p>These resources offer more ideas for planning a visit:</p>
             <ol>
-                <li><a href="https://www.go2africa.com/destinations/south-africa/" target="_blank">When Is The Best Time To Visit South Africa</a></li>
-                <li><a href="https://www.go2africa.com/african-travel-blog/top-10-reasons-to-visit-south-africa." target="_blank">Top 10 Reasons to Visit South Africa</a></li>
-                <li><a href="https://www.go2africa.com/destinations/south-africa/where-to-go." target="_blank">Where to Go in South Africa</a></li>
+                <li><a href="https://www.go2africa.com/destinations/south-africa/" target="_blank" rel="noopener noreferrer">When Is The Best Time To Visit South Africa</a></li>
+                <li><a href="https://www.go2africa.com/african-travel-blog/top-10-reasons-to-visit-south-africa." target="_blank" rel="noopener noreferrer">Top 10 Reasons to Visit South Africa</a></li>
+                <li><a href="https://www.go2africa.com/destinations/south-africa/where-to-go." target="_blank" rel="noopener noreferrer">Where to Go in South Africa</a></li>
             </ol>
-    </div>
+    </section>
 
-
-
-
-
-    
-
-
+    <section aria-labelledby="event-tips-heading">
+        <h2 id="event-tips-heading">Planning to attend?</h2>
+        <ul>
+            <li>Check the event date and location before setting out.</li>
+            <li>Bring any supplies that suit the activity, such as comfortable walking shoes for outdoor events.</li>
+            <li>Contact us if you need more information about the schedule.</li>
+        </ul>
+        <p>Looking for more inspiration? Explore the <a href="Gallery.html">gallery</a> or learn <a href="About Us.html">about this website</a>.</p>
+    </section>
 
 
 </main>
 
 <!-- Site footer -->
-    <footer></footer>
+    <footer>
+        <p>Discover more of South Africa</p>
+        <hr>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
 </body>
 </html>
 

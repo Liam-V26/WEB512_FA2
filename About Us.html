@@ -9,7 +9,10 @@
 </head>
 <body>
     <!-- Site page heading -->
-    <header>About Us</header>
+    <header id="top">
+        <h1>About Us</h1>
+        <p>Sharing the stories and experiences of South Africa</p>
+    </header>
 
 <main>
     <!-- Navigation links to the other site pages -->
@@ -26,31 +29,43 @@
     <hr>
 
     <!-- About us introduction -->
-    <div>
-        <h1>About Us</h1>
+    <section>
+        <h2>Welcome</h2>
         <p>Welcome to our website! We are a team of passionate individuals dedicated to providing the best service possible.</p>
-    </div>
+        <p>This site brings together information about South Africa, its wildlife and landscapes, and activities to help visitors explore more.</p>
+    </section>
 
     <!-- Organization mission and image -->
-    <div>
+    <section>
         <h2>Our Mission</h2>
-        <ol>
-            <li>To provide exceptional service to our customers</li>
-            <li>To foster a culture of innovation and excellence</li>
-            <li>To build lasting relationships with our community</li>
-        </ol>
+        <ul>
+            <li>Share useful information about South African destinations and experiences.</li>
+            <li>Celebrate the country's nature, culture, and communities.</li>
+            <li>Help visitors find events and discover more through photography.</li>
+        </ul>
         <img src="About Us.jpg" alt="image of a card that says about us" width="700" class="About us img">
-    </div>
+    </section>
 
-
-
-
-
-
+    <section aria-labelledby="what-you-can-find-heading">
+        <h2 id="what-you-can-find-heading">What you can find here</h2>
+        <article>
+            <h3>Ideas and information</h3>
+            <p>Start with our <a href="Index.html">home page</a> to explore some of South Africa's landscapes and highlights.</p>
+        </article>
+        <article>
+            <h3>Events and inspiration</h3>
+            <p>Browse the <a href="Events.html">events schedule</a> or visit our <a href="Gallery.html">gallery</a> for wildlife and craft photos.</p>
+        </article>
+        <p>Have a suggestion or question? <a href="Contact Us.html">Get in touch</a>.</p>
+    </section>
 
 </main>
 
     <!-- Site footer -->
-    <footer></footer>
+    <footer>
+        <p>Explore more of South Africa</p>
+        <hr>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
 </body>
 </html>

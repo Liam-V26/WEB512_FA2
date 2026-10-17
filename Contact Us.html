@@ -6,10 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form > div {
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            box-sizing: border-box;
+            padding: 0.5rem;
+        }
+
+        .contact-form button {
+            margin-top: 0.25rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Site page heading -->
-    <header>Contact Us</header>
+    <header id="top">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+    </header>
 
     <main>
         <!-- Navigation links to the other site pages -->
@@ -27,13 +51,37 @@
 
         <!-- Contact page introduction and image -->
         <section>
-            <h1>Contact Us</h1>
-            <p>Feel free to reach out to us with any questions or inquiries!</p>
+            <h2>Get in touch</h2>
+            <p>Have a question about South Africa, one of our events, or something you saw in the gallery? Send us a message using the form below.</p>
             <img src="Contact Us.jpg" alt="Image of social media and platforms to contact someone" width="700" class="Contact us img">
         </section>
 
+        <section aria-labelledby="help-heading">
+            <h2 id="help-heading">How can we help?</h2>
+            <div>
+                <article>
+                    <h3>Plan a visit</h3>
+                    <p>Ask us about South African destinations, wildlife, or ideas for your next adventure.</p>
+                    <a href="Index.html">Discover South Africa</a>
+                </article>
+                <article>
+                    <h3>Ask about an event</h3>
+                    <p>Get in touch with questions about event dates, activities, or locations.</p>
+                    <a href="Events.html">See upcoming events</a>
+                </article>
+                <article>
+                    <h3>Share your feedback</h3>
+                    <p>Tell us what you enjoyed or suggest something you'd like to see on the website.</p>
+                    <a href="Gallery.html">Explore the gallery</a>
+                </article>
+            </div>
+        </section>
+
         <!-- Form for visitors to send a message -->
-        <form class="contact-form">
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Send us a message</h2>
+            <p>Complete the form and include as much detail as you can so we know how to help.</p>
+            <form class="contact-form">
             <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -41,6 +89,17 @@
             <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="topic">What is your message about?</label>
+                <select id="topic" name="topic">
+                    <option value="">Choose a topic</option>
+                    <option value="travel">Travel and destinations</option>
+                    <option value="events">Events and activities</option>
+                    <option value="wildlife">Wildlife and conservation</option>
+                    <option value="website">Website feedback</option>
+                    <option value="other">Something else</option>
+                </select>
             </div>
             <div>
                 <label for="subject">Subject</label>
@@ -51,10 +110,15 @@
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit">Submit</button>
-        </form>
+            </form>
+        </section>
+
     </main>
 
     <!-- Site footer -->
-    <footer></footer>
+    <footer>
+        <hr>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
 </body>
 </html>

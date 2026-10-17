@@ -9,7 +9,10 @@
 </head>
 <body>
     <!-- Site page heading -->
-    <header>Home</header>
+    <header id="top">
+        <h1>Explore South Africa</h1>
+        <p>A place of remarkable landscapes, wildlife, and culture</p>
+    </header>
 
 <main>
     <!-- Navigation links to the other site pages -->
@@ -26,15 +29,15 @@
     <hr>
 
     <!-- Welcome message and home page image -->
-    <div>
-        <h1>Welcome to Our Website</h1>
-        <p>We are dedicated to providing the best experience for our customers.</p>
+    <section>
+        <h2>Welcome to our website</h2>
+        <p>Discover the places, people, wildlife, and experiences that make South Africa special. Browse our guides, view the gallery, and find an event to enjoy.</p>
         <img src="Home.jpg" width="700" alt="image of the south african flag on a brick wall" class="Home img">
-    </div>
+    </section>
 
     <!-- Introduction to South Africa -->
-    <div>
-        <h3>What makes South Africa so beautiful and sutch a fantastic destination.</h3>
+    <section>
+        <h2>One country, many experiences</h2>
         <p>South Africa is celebrated as one of the most beautiful countries on Earth because it truly offers a world in one country,
              blending jaw-dropping natural landscapes with an incredibly vibrant soul. Its physical beauty is legendary, stretching from the iconic, 
              flat-topped Table Mountain and the rugged cliffs of Chapmans Peak in Cape Town, all the way across the lush, forested coastal paths of the Garden Route to the towering,
@@ -42,32 +45,51 @@
                roaming freely in their natural habitat. Yet, what makes South Africa undeniably beautiful is the profound warmth of its people—the "Rainbow Nation." Rooted in the deeply held local philosophy 
                of Ubuntu—the belief that our humanity is beautifully interconnected—the country welcomes visitors with an unmatched, authentic friendliness and a rich, diverse tapestry of cultures, music, and traditions that stay with you long after you leave.
         </p>
-    </div>
+    </section>
+
+    <section aria-labelledby="highlights-heading">
+        <h2 id="highlights-heading">A few highlights</h2>
+        <article>
+            <h3>Landscapes worth exploring</h3>
+            <p>From mountain scenery and coastal routes to wide-open natural spaces, South Africa offers plenty to discover.</p>
+        </article>
+        <article>
+            <h3>Wildlife and nature</h3>
+            <p>Learn about the country's wildlife and see some of its animals in our <a href="Gallery.html">photo gallery</a>.</p>
+        </article>
+        <article>
+            <h3>Culture and community</h3>
+            <p>Explore local traditions, events, and the many stories that make up South Africa.</p>
+        </article>
+    </section>
+
+    <section aria-labelledby="discover-heading">
+        <h2 id="discover-heading">Keep exploring</h2>
+        <ul>
+            <li><a href="About Us.html">Learn more about this website</a></li>
+            <li><a href="Events.html">Browse upcoming events</a></li>
+            <li><a href="Gallery.html">Visit the photo gallery</a></li>
+        </ul>
+    </section>
 
     <!-- South Africa video -->
-    <div>
+    <section aria-labelledby="video-heading">
+        <h2 id="video-heading">See South Africa</h2>
+        <p>Watch the video below for another glimpse of the country.</p>
         <video width="560" controls >
             <source src="video2.mp4" type="video/mp4" class="video1">
             Your browser does not support the video tag.
         </video>
-    </div>
-
-    <div>
-
-    </div>
-
-
-
-
-
-
-
-
+    </section>
 
 
 </main>
 
 <!-- Site footer -->
-<footer></footer>
+<footer>
+    <p>Thanks for exploring South Africa with us.</p>
+    <hr>
+    <p><a href="#top">Back to top</a></p>
+</footer>
 </body>
 </html>
