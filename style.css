@@ -188,3 +188,68 @@ footer a {
 .contact-form button:hover {
     background-color: forestgreen;
 }
+
+
+.main-content {
+ background-color: white;
+ border: 2px solid steelblue;
+ padding: 20px;
+ margin: 20px auto;
+ width: 80%;
+ border-radius: 8px;
+}
+
+.about-section {
+ background-color: white;
+ padding: 15px;
+ border-left: 4px solid steelblue;
+}
+
+.profile-card {
+ border: 1px solid white;
+ padding: 15px;
+ text-align: center;
+}
+
+.profile-card:hover {
+ background-color: white;
+ border-color: steelblue;
+}
+
+.main-content button {
+ background-color: steelblue;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+}
+
+.main-content button:hover {
+ background-color: steelblue;
+ cursor: pointer;
+}
+
+@media (max-width: 768px) {
+ nav ul {
+   flex-direction: column;
+   text-align: center;
+   gap: 10px;
+ }
+ .main-content {
+   width: 95%;
+   padding: 10px;
+ }
+ .profile-card {
+   width: 100%;
+   margin: 10px 0;
+ }
+}
+
+@media (max-width: 480px) {
+ .main-header h1 {
+   font-size: 22px;
+ }
+ footer {
+   flex-direction: column;
+ }
+}
