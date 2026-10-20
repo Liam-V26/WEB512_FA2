@@ -1,7 +1,7 @@
 # WEB512_FA2
 This website was created by:
 Liam Viljoen
-Caidin
+Caidin Brinkhuis
 Caiden
 Roscoe Adonis
 Auston
@@ -11,3 +11,6 @@ Liam Viljoen
 
 The CSS was done by:
 -Roscoe Adonis
+
+The CSS was done by:
+-Caidin Brinkhuis
