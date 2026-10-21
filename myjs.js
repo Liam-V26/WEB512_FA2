@@ -150,3 +150,63 @@ function showWelcomeMessage(){
 }
 
 // Option B - Image Slideshow
+function addSlideshow(){
+    var pictures = document.querySelectorAll("figure img");
+    if(pictures.length == 0){
+        return;
+    }
+
+    var section = document.createElement("section");
+    section.innerHTML = "<h2>Featured slideshow</h2>";
+
+    var box = makeBox();
+    box.style.textAlign = "center";
+
+    var image = document.createElement("img");
+    image.style.width = "100%";
+    image.style.maxWidth = "600px";
+    image.style.height = "350px";
+    image.style.objectFit = "contain";
+
+    var caption = document.createElement("p");
+    var current = 0;   // the number of the picture shown
+
+    function showSlide(){
+        image.src = pictures[current].src;
+        image.alt = pictures[current].alt;
+        caption.textContent = "Picture " + (current + 1) + " of " + pictures.length + ": " + pictures[current].alt;
+    }
+    function nextSlide(){
+        current = current + 1;
+        if(current == pictures.length){
+            current = 0;
+        }
+        showSlide();
+    }
+
+    function previousSlide(){
+        current = current - 1;
+        if(current < 0){
+            current = pictures.length - 1;
+        }
+        showSlide();
+    }
+
+    var previousButton = makeButton("Previous");
+    var nextButton = makeButton("Next");
+    previousButton.onclick = previousSlide;
+    nextButton.onclick = nextSlide;
+
+    box.appendChild(image);
+    box.appendChild(caption);
+    box.appendChild(previousButton);
+    box.appendChild(nextButton);
+    section.appendChild(box);
+
+    // Placing the slideshow above the photo section
+    var photoSection= document.getElementById("wildlife-heading").parentNode;
+    photoSection.parentNode.insertBefore(section, photoSection);
+
+    showSlide();
+    setInterval(nextSlide, 4000); // Picture changes every 4 seconds
+}
