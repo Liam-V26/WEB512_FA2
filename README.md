@@ -14,3 +14,9 @@ The CSS was done by:
 
 The CSS was done by:
 Caidin Brinkhuis
+
+The JavaScript was done by:
+Auston Jansen
+
+The JavaScript was done by:
+Caiden Adams
