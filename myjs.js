@@ -59,7 +59,7 @@ function makeBox(){
 }
 
 // Turns a price into text (eg. 350 becomes R350)
-function priceText(){
+function priceText(price){
     if(price==0){
         return "Free";
     }
